@@ -12,6 +12,7 @@ topics:
   - webview-flutter
   - inappwebview
   - browser
+publish_to: none
 
 environment:
   sdk: ^3.5.0
@@ -23,7 +24,12 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   web: ^1.0.0
-  flutter_inappwebview_platform_interface: ^1.3.0
+
+  flutter_inappwebview_platform_interface:
+    git:
+      url: https://github.com/julieduchateau/flutter_inappwebview.git
+      ref: v6.1.5-fix-ptr-issue
+      path: flutter_inappwebview_platform_interface
 
 dev_dependencies:
   flutter_test:
